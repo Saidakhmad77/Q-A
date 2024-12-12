@@ -3,7 +3,11 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color: #f8f9fa;
+}
+
+h1, h2, p {
+    margin: 0;
 }
 
 /* Header Styling */
@@ -17,13 +21,26 @@ body {
 }
 
 .header h1 {
+    text-align: center;
+    flex: 1;
+    font-size: 2rem;
     margin: 0;
-    font-size: 1.8rem;
-    font-weight: bold;
 }
 
 .header .logo {
     height: 50px;
+}
+
+.header .header-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header .home-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
 }
 
 .language-selector select {
@@ -34,22 +51,22 @@ body {
     outline: none;
 }
 
-/* First Page Styling */
+/* Main Language Section */
 .main-language {
     text-align: center;
     margin: 50px auto;
-    max-width: 600px;
+    max-width: 800px;
 }
 
-.intro-title {
+.main-language h2 {
     font-size: 2rem;
     color: #003366;
     margin-bottom: 20px;
 }
 
-.intro-text {
+.main-language .intro {
     font-size: 1.2rem;
-    color: #555;
+    color: #333;
     margin-bottom: 30px;
 }
 
@@ -60,29 +77,21 @@ body {
 }
 
 .language-button {
-    width: 200px;
-    height: 60px;
+    padding: 15px 30px;
     font-size: 1.2rem;
-    background-color: #003366;
     color: white;
+    background-color: #003366;
     border: none;
-    border-radius: 8px;
+    border-radius: 5px;
     cursor: pointer;
-    transition: transform 0.2s, box-shadow 0.2s;
+    transition: background-color 0.3s ease;
 }
 
 .language-button:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #0055b3;
 }
 
-/* Second Page Styling */
-#questions-container {
-    max-width: 800px;
-    margin: 30px auto;
-    padding: 20px;
-}
-
+/* Questions Section */
 .question {
     display: flex;
     justify-content: space-between;
@@ -100,6 +109,12 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.question .icon {
+    font-size: 1.2rem;
+    color: #555;
+    transition: transform 0.2s;
+}
+
 .answer {
     display: none;
     background-color: #e3f2fd;
@@ -112,9 +127,10 @@ body {
     line-height: 1.6;
 }
 
-.close-answer {
-    position: absolute;
-    top: 10px;
-    right: 10px;
+.answer .close-answer {
+    text-align: right;
+    font-size: 1.2rem;
+    color: red;
     cursor: pointer;
+    margin-top: 10px;
 }
