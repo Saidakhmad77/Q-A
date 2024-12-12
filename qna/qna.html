@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q&A - Questions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <img src="/images/logo-color.png" alt="Logo" class="logo">
+        <div class="language-selector">
+            <label for="language">Choose Language:</label>
+            <select id="language" onchange="changeLanguage()">
+                <option value="en">English</option>
+                <option value="zh">中文 (Chinese)</option>
+                <option value="jp">日本語 (Japanese)</option>
+            </select>
+        </div>
+    </header>
+    <main class="main-questions">
+        <div id="questions-container">
+            <!-- Questions will be dynamically populated here -->
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
