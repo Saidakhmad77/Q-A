@@ -1,4 +1,4 @@
-/* General Styling */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -10,7 +10,7 @@ h1, h2, p {
     margin: 0;
 }
 
-/* Header Styling */
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -51,7 +51,7 @@ h1, h2, p {
     outline: none;
 }
 
-/* Main Language Section */
+
 .main-language {
     text-align: center;
     margin: 50px auto;
@@ -91,7 +91,7 @@ h1, h2, p {
     background-color: #0055b3;
 }
 
-/* Questions Section */
+
 .question {
     display: flex;
     justify-content: space-between;
