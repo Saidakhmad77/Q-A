@@ -1,17 +1,15 @@
-
+/* General Styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f8f9fa;
+    text-align: center;
 }
 
-h1, h2, p {
-    margin: 0;
-}
+/* ---------- INDEX PAGE STYLING ---------- */
 
-
-.header {
+.index-page .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,9 +18,201 @@ h1, h2, p {
     padding: 10px 20px;
 }
 
-.header h1 {
+.index-page .header h1 {
     text-align: center;
     flex: 1;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.index-page .header .logo {
+    height: 50px;
+}
+
+.index-page .main-language {
+    margin-top: 50px;
+}
+
+.index-page .welcome-message h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.index-page .welcome-message p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.index-page .language-text {
+    font-size: 1.5rem;
+    color: #003366;
+    margin-bottom: 30px;
+}
+
+.index-page .language-options {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.index-page .language-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 270px;
+    height: 180px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease;
+    object-fit: cover;
+}
+
+.index-page .language-button:hover {
+    transform: scale(1.05);
+}
+
+.index-page .language-button img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.index-page .china-flag {
+    margin-left: 10px; /* Specific adjustment for China's flag */
+}
+
+@media screen and (max-width: 768px) {
+    .index-page .language-options {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .index-page .language-button {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* ---------- Q&A PAGE STYLING ---------- */
+
+.qna-page .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #003366;
+    color: white;
+    padding: 10px 20px;
+}
+
+.qna-page .header h1 {
+    flex: 1;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.qna-page .header .logo {
+    height: 50px;
+}
+
+.qna-page .header-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.qna-page .home-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.qna-page .language-selector select {
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.qna-page main {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.qna-page .section {
+    margin-bottom: 30px;
+}
+
+.qna-page .section h2 {
+    background-color: #003366;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.qna-page .questions-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.qna-page .question {
+    background-color: #e5e5ea;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.qna-page .question:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.qna-page .answer {
+    display: none;
+    background-color: #d1e7dd;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 1rem;
+    text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+    .qna-page .header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .qna-page .language-selector {
+        margin-top: 10px;
+    }
+}
+/* General Q&A Styling */
+.qna-page {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #003366;
+    color: white;
+    padding: 15px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header h1 {
     font-size: 2rem;
     margin: 0;
 }
@@ -31,106 +221,77 @@ h1, h2, p {
     height: 50px;
 }
 
-.header .header-icons {
+.language-selector {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
 }
 
-.header .home-icon {
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-}
-
-.language-selector select {
+select {
     padding: 5px;
     font-size: 1rem;
-    border: none;
-    border-radius: 5px;
-    outline: none;
 }
 
-
-.main-language {
-    text-align: center;
-    margin: 50px auto;
+.section {
+    margin: 20px auto;
+    padding: 20px;
     max-width: 800px;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
-.main-language h2 {
-    font-size: 2rem;
-    color: #003366;
+.section h2 {
+    text-align: center;
     margin-bottom: 20px;
+    color: #003366;
+    font-size: 1.8rem;
+    border-bottom: 2px solid #005bb3;
+    padding-bottom: 10px;
 }
-
-.main-language .intro {
-    font-size: 1.2rem;
-    color: #333;
-    margin-bottom: 30px;
-}
-
-.language-options {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.language-button {
-    padding: 15px 30px;
-    font-size: 1.2rem;
-    color: white;
-    background-color: #003366;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.language-button:hover {
-    background-color: #0055b3;
-}
-
 
 .question {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    padding: 15px 20px;
+    background-color: #f0f8ff;
+    border: 1px solid #d9e6f2;
     margin-bottom: 15px;
+    padding: 15px;
     border-radius: 8px;
-    border: 1px solid #ccc;
     cursor: pointer;
-    transition: box-shadow 0.2s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, background-color 0.3s;
 }
 
 .question:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #e0efff;
+    transform: scale(1.02);
 }
 
-.question .icon {
+.question-text {
     font-size: 1.2rem;
-    color: #555;
-    transition: transform 0.2s;
+    font-weight: bold;
+    color: #003366;
 }
 
 .answer {
     display: none;
-    background-color: #e3f2fd;
-    padding: 20px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    border-radius: 8px;
-    border: 1px solid #90caf9;
-    font-size: 1.2rem;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #555;
+    border-top: 1px dashed #ccc;
+    padding-top: 10px;
     line-height: 1.6;
 }
 
-.answer .close-answer {
-    text-align: right;
-    font-size: 1.2rem;
-    color: red;
-    cursor: pointer;
-    margin-top: 10px;
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .section {
+        padding: 10px;
+        margin: 10px;
+    }
+    .header h1 {
+        font-size: 1.5rem;
+    }
+    .question-text {
+        font-size: 1rem;
+    }
 }

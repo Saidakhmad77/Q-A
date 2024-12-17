@@ -6,14 +6,14 @@
     <title>STEMON - Q&A</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="qna-page">
     <header class="header">
-        <img src="/images/logo-color.png" alt="STEMON Logo" class="logo">
+        <img src="images/logo-color.png" alt="STEMON Logo" class="logo">
         <h1>Q&A</h1>
         <div class="header-icons">
-            <img src="/images/home.png" alt="Home" class="home-icon" onclick="navigateToHome()">
+            <img src="images/home.png" alt="Home" class="home-icon" onclick="navigateToHome()">
             <div class="language-selector">
-                <label for="language">Choose Language:</label>
+                <label for="language">Language:</label>
                 <select id="language">
                     <option value="en">English</option>
                     <option value="zh">中文 (Chinese)</option>
@@ -22,9 +22,22 @@
             </div>
         </div>
     </header>
-    <main id="questions-container">
-        <!-- Questions will be dynamically populated here -->
+
+    <main id="qna-container">
+        <section class="section" id="exosome">
+            <h2>Exosome</h2>
+            <div id="exosome-questions" class="questions-container"></div>
+        </section>
+        <section class="section" id="stemon">
+            <h2>STEMON</h2>
+            <div id="stemon-questions" class="questions-container"></div>
+        </section>
+        <section class="section" id="reprosome">
+            <h2>Reprosome</h2>
+            <div id="reprosome-questions" class="questions-container"></div>
+        </section>
     </main>
+
     <script src="script.js"></script>
 </body>
 </html>
