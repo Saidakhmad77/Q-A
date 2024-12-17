@@ -32,7 +32,7 @@ body {
 }
 
 .index-page .main-language {
-    margin-top: 80px; /* Push flags further down */
+    margin-top: 80px;
     padding: 0 20px;
 }
 
@@ -58,10 +58,10 @@ body {
 .index-page .language-options {
     display: flex;
     justify-content: center;
-    gap: 40px; /* Add more spacing between flags */
-    margin-top: 60px; /* Push flags even further down */
+    gap: 40px;
+    margin-top: 60px;
     position: relative;
-    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    flex-wrap: wrap; 
 }
 
 .index-page .language-button {
@@ -89,7 +89,6 @@ body {
     transform: scale(1.05);
 }
 
-/* Text Overlay */
 .index-page .language-button .text-overlay {
     position: absolute;
     top: 50%;
@@ -113,7 +112,6 @@ body {
     margin-left: 10px;
 }
 
-/* Responsive Fixes for Smaller Screens */
 @media screen and (max-width: 1024px) {
     .index-page .welcome-message h2 {
         font-size: 2rem;
