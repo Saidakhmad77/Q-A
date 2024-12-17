@@ -81,7 +81,7 @@ body {
 }
 
 .index-page .china-flag {
-    margin-left: 10px; /* Specific adjustment for China's flag */
+    margin-left: 10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -193,7 +193,7 @@ body {
         margin-top: 10px;
     }
 }
-/* General Q&A Styling */
+
 .qna-page {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -282,7 +282,7 @@ select {
     line-height: 1.6;
 }
 
-/* Responsive Styling */
+
 @media (max-width: 768px) {
     .section {
         padding: 10px;
