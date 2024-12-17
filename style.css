@@ -5,6 +5,7 @@ body {
     padding: 0;
     background-color: #f8f9fa;
     text-align: center;
+    scroll-behavior: smooth;
 }
 
 /* ---------- INDEX PAGE STYLING ---------- */
@@ -55,9 +56,11 @@ body {
     justify-content: center;
     gap: 30px;
     margin-top: 20px;
+    position: relative;
 }
 
 .index-page .language-button {
+    position: relative; /* Ensures child elements are positioned relative to this */
     background: none;
     border: none;
     cursor: pointer;
@@ -70,14 +73,35 @@ body {
     object-fit: cover;
 }
 
-.index-page .language-button:hover {
-    transform: scale(1.05);
-}
-
 .index-page .language-button img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
+}
+
+.index-page .language-button:hover {
+    transform: scale(1.05);
+}
+
+/* Text Overlay */
+.index-page .language-button .text-overlay {
+    position: absolute; /* Positioned relative to parent (.language-button) */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Perfect centering */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: white; /* Text color */
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out;
+}
+
+.index-page .language-button:hover .text-overlay {
+    opacity: 1; /* Show text overlay on hover */
 }
 
 .index-page .china-flag {
@@ -202,36 +226,6 @@ body {
     color: #333;
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #003366;
-    color: white;
-    padding: 15px 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.header h1 {
-    font-size: 2rem;
-    margin: 0;
-}
-
-.header .logo {
-    height: 50px;
-}
-
-.language-selector {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-select {
-    padding: 5px;
-    font-size: 1rem;
-}
-
 .section {
     margin: 20px auto;
     padding: 20px;
@@ -281,7 +275,6 @@ select {
     padding-top: 10px;
     line-height: 1.6;
 }
-
 
 @media (max-width: 768px) {
     .section {
