@@ -58,10 +58,9 @@ body {
 .index-page .language-options {
     display: flex;
     justify-content: center;
-    gap: 40px;
-    margin-top: 60px;
-    position: relative;
-    flex-wrap: wrap; 
+    gap: 30px;
+    margin-top: 80px;
+    flex-wrap: wrap;
 }
 
 .index-page .language-button {
@@ -69,13 +68,11 @@ body {
     background: none;
     border: none;
     cursor: pointer;
-    width: 270px;
-    height: 180px;
+    width: 300px;
+    height: 200px;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    transition: transform 0.2s ease;
-    object-fit: cover;
 }
 
 .index-page .language-button img {
@@ -85,31 +82,18 @@ body {
     display: block;
 }
 
-.index-page .language-button:hover {
-    transform: scale(1.05);
-}
-
 .index-page .language-button .text-overlay {
     position: absolute;
-    top: 0%;
-    left: 60%;
-/*     transform: translate(-50%, -50%); */
-    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 8px;
-/*     opacity: 0; */
-/*     transition: opacity 0.3s ease-in-out; */
-}
-
-.index-page .language-button:hover .text-overlay {
-    opacity: 1;
-}
-
-.index-page .china-flag {
-    margin-left: 20px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-align: center;
 }
 
 @media screen and (max-width: 1024px) {
@@ -134,8 +118,8 @@ body {
     }
 
     .index-page .language-button {
-        width: 200px;
-        height: 130px;
+        width: 250px;
+        height: 160px;
     }
 
     .index-page .welcome-message h2 {
@@ -153,8 +137,8 @@ body {
     }
 
     .index-page .language-button {
-        width: 150px;
-        height: 100px;
+        width: 200px;
+        height: 130px;
     }
 
     .index-page .welcome-message h2 {
@@ -162,6 +146,11 @@ body {
     }
 
     .index-page .welcome-message p {
+        font-size: 0.9rem;
+    }
+
+    .index-page .language-button .text-overlay {
+        bottom: 10px;
         font-size: 0.9rem;
     }
 }
