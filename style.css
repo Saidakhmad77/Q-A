@@ -91,17 +91,17 @@ body {
 
 .index-page .language-button .text-overlay {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 0%;
+    left: 60%;
+/*     transform: translate(-50%, -50%); */
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     font-size: 1.2rem;
     font-weight: bold;
     padding: 10px 20px;
     border-radius: 8px;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
+/*     opacity: 0; */
+/*     transition: opacity 0.3s ease-in-out; */
 }
 
 .index-page .language-button:hover .text-overlay {
@@ -109,7 +109,7 @@ body {
 }
 
 .index-page .china-flag {
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 @media screen and (max-width: 1024px) {
