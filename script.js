@@ -73,3 +73,46 @@ document.addEventListener("DOMContentLoaded", async () => {
     setLanguage(currentLanguage);
     loadQuestions(translations, currentLanguage);
 });
+
+const translations = {
+    en: {
+        welcomeTitle: "Welcome to STEMON's Q&A",
+        welcomeText: "Please select a language to explore frequently asked questions.",
+        welcomeAdditional: "Whether you're curious about our therapies, biotechnology, or general company information, we have answers in your preferred language."
+    },
+    zh: {
+        welcomeTitle: "欢迎来到 STEMON 的问答",
+        welcomeText: "请选择一种语言，以探索常见问题。",
+        welcomeAdditional: "无论您对我们的疗法、生物技术或一般公司信息感到好奇，我们都有您所需的答案。"
+    },
+    jp: {
+        welcomeTitle: "STEMON のQ&Aへようこそ",
+        welcomeText: "よくある質問を探すために言語を選択してください。",
+        welcomeAdditional: "当社の治療法やバイオテクノロジー、一般的な会社情報についての回答をご用意しています。"
+    }
+};
+
+function changeLanguage(lang) {
+    localStorage.setItem('selectedLanguage', lang);
+
+    document.getElementById('welcome-title').innerText = translations[lang].welcomeTitle;
+    document.getElementById('welcome-text').innerText = translations[lang].welcomeText;
+    document.getElementById('welcome-additional').innerText = translations[lang].welcomeAdditional;
+
+    const languageDropdown = document.getElementById('header-language');
+    if (languageDropdown) {
+        languageDropdown.value = lang;
+    }
+}
+
+function loadLanguage() {
+    const savedLanguage = localStorage.getItem('selectedLanguage') || 'en';
+    changeLanguage(savedLanguage);
+}
+
+window.onload = loadLanguage;
+
+function navigateToQnA(lang) {
+    localStorage.setItem('selectedLanguage', lang); 
+    window.location.href = `qna.html?lang=${lang}`; 
+}
