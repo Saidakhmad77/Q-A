@@ -1,12 +1,12 @@
 const CACHE_NAME = 'qna-pwa-cache-v1';
 const urlsToCache = [
-    './',
+    './', 
     './index.html',
     './qna.html',
     './style.css',
     './script.js',
-    './manifest.json',
     './translations.json',
+    './manifest.json',
     './images/china.jpg',
     './images/exosome_1.jpg',
     './images/exosome.gif',
