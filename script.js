@@ -1,4 +1,3 @@
-
 async function fetchTranslations() {
     const response = await fetch("translations.json");
     return await response.json();
@@ -12,13 +11,16 @@ function loadQuestions(translations, language) {
         container.innerHTML = ""; 
 
         const questions = translations[language][section];
-        Object.entries(questions).forEach(([question, answer]) => {
+        Object.entries(questions).forEach(([question, data]) => {
             const questionDiv = document.createElement("div");
             questionDiv.className = "question";
 
             questionDiv.innerHTML = `
                 <div class="question-text">${question}</div>
-                <div class="answer">${answer}</div>
+                <div class="answer">
+                    <p>${data.text}</p>
+                    ${data.image ? `<img src="${data.image}" alt="${question}">` : ""}
+                </div>
             `;
 
             questionDiv.addEventListener("click", () => {

@@ -1,77 +1,230 @@
 {
-    "en": {
-      "Exosome": {
-        "What is exosome?": "Exosomes are small extracellular vesicles that are released from cells, playing a role in intercellular communication.",
-        "What does it do?": "Exosomes carry proteins, lipids, and genetic material, which can help regulate cellular processes, tissue repair, and immune responses.",
-        "How many kinds of exosome do you have?": "We offer various exosomes, including plant-derived, animal-derived, and human-derived types.",
-        "What are the sources?": "Our exosomes are sourced from plants, animals, and human cells, ensuring versatility and broad applications.",
-        "Do you have any plant derived exosomes?": "Yes, we offer plant-derived exosomes, primarily used in skincare and cosmetic applications for anti-aging and rejuvenation.",
-        "Do you have any animal derived exosome?": "Yes, we provide animal-derived exosomes used in medical and therapeutic research applications.",
-        "Do you have any human derived exosome?": "Yes, we offer human-derived exosomes used in regenerative medicine and advanced therapeutic applications.",
-        "Do you have any exosome for hair loss?": "Yes, we provide exosomes specifically formulated to promote hair growth and prevent hair loss.",
-        "Do you have any exosome for anti-aging?": "Yes, we offer anti-aging exosomes to improve skin elasticity and reduce signs of aging.",
-        "Do you have any exosome for acne?": "Yes, we offer exosomes formulated to reduce acne and promote skin healing.",
-        "Do you have any collagen exosome?": "Yes, we provide collagen-boosting exosomes to improve skin texture and elasticity."
+  "en": {
+    "Exosome": {
+      "What is exosome?": {
+        "text": "Exosomes are small extracellular vesicles that are released from cells, playing a role in intercellular communication.",
+        "image": "images/exosome_1.jpg"
       },
-      "STEMON": {
-        "What does STEMON do?": "STEMON specializes in biotechnology and exosome manufacturing, providing solutions for regenerative medicine, skincare, and research.",
-        "Where is your company based?": "Our company is based in South Korea, with a global presence for biotechnology solutions.",
-        "Are you a manufacturing company?": "Yes, STEMON is a manufacturing company that produces exosomes and related biotechnological products.",
-        "Which countries are you currently exporting to?": "We currently export our products to countries in Asia, Europe, North America, and the Middle East."
+      "What does it do?": {
+        "text": "Exosomes carry proteins, lipids, and genetic material, which can help regulate cellular processes, tissue repair, and immune responses.",
+        "image": "https://example.com/images/exosome_function.jpg"
       },
-      "Reprosome": {
-        "What is reprosome?": "Reprosome is a specialized extracellular vesicle, similar to exosomes, but with a focus on reproductive health and cellular regeneration.",
-        "What is the difference between exosome and reprosome?": "While both are extracellular vesicles, exosomes are involved in general cellular communication, whereas reprosomes are specifically focused on reproductive health and cellular regeneration."
+      "How many kinds of exosome do you have?": {
+        "text": "We offer various exosomes, including plant-derived, animal-derived, and human-derived types.",
+        "image": "https://example.com/images/exosome_types.jpg"
+      },
+      "What are the sources?": {
+        "text": "Our exosomes are sourced from plants, animals, and human cells, ensuring versatility and broad applications.",
+        "image": "https://example.com/images/exosome_sources.jpg"
+      },
+      "Do you have any plant derived exosomes?": {
+        "text": "Yes, we offer plant-derived exosomes, primarily used in skincare and cosmetic applications for anti-aging and rejuvenation.",
+        "image": "https://example.com/images/plant_exosome.jpg"
+      },
+      "Do you have any animal derived exosome?": {
+        "text": "Yes, we provide animal-derived exosomes used in medical and therapeutic research applications.",
+        "image": "https://example.com/images/animal_exosome.jpg"
+      },
+      "Do you have any human derived exosome?": {
+        "text": "Yes, we offer human-derived exosomes used in regenerative medicine and advanced therapeutic applications.",
+        "image": "https://example.com/images/human_exosome.jpg"
+      },
+      "Do you have any exosome for hair loss?": {
+        "text": "Yes, we provide exosomes specifically formulated to promote hair growth and prevent hair loss.",
+        "image": "https://example.com/images/hair_loss_exosome.jpg"
+      },
+      "Do you have any exosome for anti-aging?": {
+        "text": "Yes, we offer anti-aging exosomes to improve skin elasticity and reduce signs of aging.",
+        "image": "https://example.com/images/anti_aging_exosome.jpg"
+      },
+      "Do you have any exosome for acne?": {
+        "text": "Yes, we offer exosomes formulated to reduce acne and promote skin healing.",
+        "image": "https://example.com/images/acne_exosome.jpg"
+      },
+      "Do you have any collagen exosome?": {
+        "text": "Yes, we provide collagen-boosting exosomes to improve skin texture and elasticity.",
+        "image": "https://example.com/images/collagen_exosome.jpg"
       }
     },
-    "zh": {
-      "Exosome": {
-        "什么是外泌体？": "外泌体是由细胞释放的小型囊泡，在细胞间信息传递中起作用。",
-        "外泌体的作用是什么？": "外泌体携带蛋白质、脂质和遗传物质，帮助调节细胞过程、组织修复和免疫反应。",
-        "你们有多少种外泌体？": "我们提供多种外泌体，包括植物、动物和人类来源的外泌体。",
-        "外泌体的来源是什么？": "我们的外泌体来源于植物、动物和人类细胞，确保广泛的应用。",
-        "你们有植物来源的外泌体吗？": "是的，我们提供植物来源的外泌体，主要用于护肤和抗衰老。",
-        "你们有动物来源的外泌体吗？": "是的，我们提供动物来源的外泌体，主要用于医学和治疗研究。",
-        "你们有人类来源的外泌体吗？": "是的，我们提供人类来源的外泌体，主要用于再生医学和高级治疗应用。",
-        "你们有防脱发的外泌体吗？": "是的，我们提供促进头发生长和防止脱发的外泌体。",
-        "你们有抗衰老的外泌体吗？": "是的，我们提供抗衰老外泌体，改善皮肤弹性并减少衰老迹象。",
-        "你们有治疗痤疮的外泌体吗？": "是的，我们提供减少痤疮并促进皮肤愈合的外泌体。",
-        "你们有胶原蛋白外泌体吗？": "是的，我们提供促进胶原蛋白生成的外泌体，改善皮肤质感和弹性。"
+    "STEMON": {
+      "What does STEMON do?": {
+        "text": "STEMON specializes in biotechnology and exosome manufacturing, providing solutions for regenerative medicine, skincare, and research.",
+        "image": "https://example.com/images/stemon.jpg"
       },
-      "STEMON": {
-        "STEMON公司是做什么的？": "STEMON专注于生物技术和外泌体制造，提供再生医学、皮肤护理和研究解决方案。",
-        "你们的公司在哪里？": "我们的公司总部位于韩国，并在全球提供生物技术解决方案。",
-        "你们是生产公司吗？": "是的，STEMON是一家生产外泌体及相关生物技术产品的制造公司。",
-        "你们目前出口到哪些国家？": "我们目前将产品出口到亚洲、欧洲、北美和中东国家。"
+      "Where is your company based?": {
+        "text": "Our company is based in South Korea, with a global presence for biotechnology solutions.",
+        "image": "https://example.com/images/company_location.jpg"
       },
-      "Reprosome": {
-        "什么是Reprosome？": "Reprosome是一种专注于生殖健康和细胞再生的外泌体。",
-        "外泌体和Reprosome有什么区别？": "外泌体涉及一般的细胞间通信，而Reprosome专注于生殖健康和细胞再生。"
+      "Are you a manufacturing company?": {
+        "text": "Yes, STEMON is a manufacturing company that produces exosomes and related biotechnological products.",
+        "image": "https://example.com/images/manufacturing.jpg"
+      },
+      "Which countries are you currently exporting to?": {
+        "text": "We currently export our products to countries in Asia, Europe, North America, and the Middle East.",
+        "image": "https://example.com/images/export_countries.jpg"
       }
     },
-    "jp": {
-      "Exosome": {
-        "エクソームとは何ですか？": "エクソームは、細胞から放出される小さな細胞外小胞で、細胞間のコミュニケーションに関与します。",
-        "その役割は何ですか？": "エクソームは、タンパク質、脂質、遺伝子物質を運び、細胞の調節、組織修復、免疫反応を助けます。",
-        "エクソームには何種類ありますか？": "当社は、植物由来、動物由来、人由来のさまざまなエクソームを提供しています。",
-        "エクソームの由来は何ですか？": "当社のエクソームは、植物、動物、ヒト細胞を由来としています。",
-        "植物由来のエクソームはありますか？": "はい、植物由来のエクソームは、スキンケアやアンチエイジングに使用されます。",
-        "動物由来のエクソームはありますか？": "はい、動物由来のエクソームは医療および治療研究に使用されます。",
-        "人由来のエクソームはありますか？": "はい、人由来のエクソームは再生医療と高度な治療に使用されます。",
-        "脱毛防止のエクソームはありますか？": "はい、髪の成長を促進し、脱毛を防ぐエクソームを提供しています。",
-        "アンチエイジング用のエクソームはありますか？": "はい、肌の弾力性を改善し、老化の兆候を減少させるエクソームを提供しています。",
-        "ニキビ用のエクソームはありますか？": "はい、ニキビを減少させ、皮膚の治癒を促進するエクソームを提供しています。",
-        "コラーゲン用のエクソームはありますか？": "はい、コラーゲンを増加させ、肌の質感と弾力を改善するエクソームを提供しています。"
+    "Reprosome": {
+      "What is reprosome?": {
+        "text": "Reprosome is a specialized extracellular vesicle, similar to exosomes, but with a focus on reproductive health and cellular regeneration.",
+        "image": "https://example.com/images/reprosome.jpg"
       },
-      "STEMON": {
-        "STEMONは何をしていますか？": "STEMONはバイオテクノロジーおよびエクソーム製造に特化し、再生医療やスキンケア、研究用ソリューションを提供します。",
-        "会社はどこにありますか？": "当社は韓国に本社を置き、グローバルに活動しています。",
-        "製造会社ですか？": "はい、STEMONはエクソームおよび関連するバイオ製品を製造する会社です。",
-        "どの国に輸出していますか？": "当社はアジア、ヨーロッパ、北米、および中東の国々に製品を輸出しています。"
-      },
-      "Reprosome": {
-        "Reprosomeとは何ですか？": "Reprosomeは、エクソームに似た細胞外小胞で、生殖健康と細胞再生に特化しています。",
-        "エクソームとReprosomeの違いは何ですか？": "エクソームは細胞間通信に関与し、Reprosomeは生殖健康と細胞再生に特化しています。"
+      "What is the difference between exosome and reprosome?": {
+        "text": "While both are extracellular vesicles, exosomes are involved in general cellular communication, whereas reprosomes are specifically focused on reproductive health and cellular regeneration.",
+        "image": "https://example.com/images/exosome_vs_reprosome.jpg"
       }
     }
-  }  
+  },
+  "zh": {
+    "Exosome": {
+      "什么是外泌体？": {
+        "text": "外泌体是由细胞释放的小型囊泡，在细胞间信息传递中起作用。",
+        "image": "images/exosome_1.jpg"
+      },
+      "外泌体的作用是什么？": {
+        "text": "外泌体携带蛋白质、脂质和遗传物质，帮助调节细胞过程、组织修复和免疫反应。",
+        "image": "https://example.com/images/exosome_function.jpg"
+      },
+      "你们有多少种外泌体？": {
+        "text": "我们提供多种外泌体，包括植物、动物和人类来源的外泌体。",
+        "image": "https://example.com/images/exosome_types.jpg"
+      },
+      "外泌体的来源是什么？": {
+        "text": "我们的外泌体来源于植物、动物和人类细胞，确保广泛的应用。",
+        "image": "https://example.com/images/exosome_sources.jpg"
+      },
+      "你们有植物来源的外泌体吗？": {
+        "text": "是的，我们提供植物来源的外泌体，主要用于护肤和抗衰老。",
+        "image": "https://example.com/images/plant_exosome.jpg"
+      },
+      "你们有动物来源的外泌体吗？": {
+        "text": "是的，我们提供动物来源的外泌体，主要用于医学和治疗研究。",
+        "image": "https://example.com/images/animal_exosome.jpg"
+      },
+      "你们有人类来源的外泌体吗？": {
+        "text": "是的，我们提供人类来源的外泌体，主要用于再生医学和高级治疗应用。",
+        "image": "https://example.com/images/human_exosome.jpg"
+      },
+      "你们有防脱发的外泌体吗？": {
+        "text": "是的，我们提供促进头发生长和防止脱发的外泌体。",
+        "image": "https://example.com/images/hair_loss_exosome.jpg"
+      },
+      "你们有抗衰老的外泌体吗？": {
+        "text": "是的，我们提供抗衰老外泌体，改善皮肤弹性并减少衰老迹象。",
+        "image": "https://example.com/images/anti_aging_exosome.jpg"
+      },
+      "你们有治疗痤疮的外泌体吗？": {
+        "text": "是的，我们提供减少痤疮并促进皮肤愈合的外泌体。",
+        "image": "https://example.com/images/acne_exosome.jpg"
+      },
+      "你们有胶原蛋白外泌体吗？": {
+        "text": "是的，我们提供促进胶原蛋白生成的外泌体，改善皮肤质感和弹性。",
+        "image": "https://example.com/images/collagen_exosome.jpg"
+      }
+    },
+    "STEMON": {
+      "STEMON公司是做什么的？": {
+        "text": "STEMON专注于生物技术和外泌体制造，提供再生医学、皮肤护理和研究解决方案。",
+        "image": "https://example.com/images/stemon.jpg"
+      },
+      "你们的公司在哪里？": {
+        "text": "我们的公司总部位于韩国，并在全球提供生物技术解决方案。",
+        "image": "https://example.com/images/company_location.jpg"
+      },
+      "你们是生产公司吗？": {
+        "text": "是的，STEMON是一家生产外泌体及相关生物技术产品的制造公司。",
+        "image": "https://example.com/images/manufacturing.jpg"
+      },
+      "你们目前出口到哪些国家？": {
+        "text": "我们目前将产品出口到亚洲、欧洲、北美和中东国家。",
+        "image": "https://example.com/images/export_countries.jpg"
+      }
+    },
+    "Reprosome": {
+      "什么是Reprosome？": {
+        "text": "Reprosome是一种专注于生殖健康和细胞再生的外泌体。",
+        "image": "https://example.com/images/reprosome.jpg"
+      },
+      "外泌体和Reprosome有什么区别？": {
+        "text": "外泌体涉及一般的细胞间通信，而Reprosome专注于生殖健康和细胞再生。",
+        "image": "https://example.com/images/exosome_vs_reprosome.jpg"
+      }
+    }
+  },
+  "jp": {
+    "Exosome": {
+      "エクソームとは何ですか？": {
+        "text": "エクソームは、細胞から放出される小さな細胞外小胞で、細胞間のコミュニケーションに関与します。",
+        "image": "images/exosome_1.jpg"
+      },
+      "その役割は何ですか？": {
+        "text": "エクソームは、タンパク質、脂質、遺伝子物質を運び、細胞の調節、組織修復、免疫反応を助けます。",
+        "image": "https://example.com/images/exosome_function.jpg"
+      },
+      "エクソームには何種類ありますか？": {
+        "text": "当社は、植物由来、動物由来、人由来のさまざまなエクソームを提供しています。",
+        "image": "https://example.com/images/exosome_types.jpg"
+      },
+      "エクソームの由来は何ですか？": {
+        "text": "当社のエクソームは、植物、動物、ヒト細胞を由来としています。",
+        "image": "https://example.com/images/exosome_sources.jpg"
+      },
+      "植物由来のエクソームはありますか？": {
+        "text": "はい、植物由来のエクソームは、スキンケアやアンチエイジングに使用されます。",
+        "image": "https://example.com/images/plant_exosome.jpg"
+      },
+      "動物由来のエクソームはありますか？": {
+        "text": "はい、動物由来のエクソームは医療および治療研究に使用されます。",
+        "image": "https://example.com/images/animal_exosome.jpg"
+      },
+      "人由来のエクソームはありますか？": {
+        "text": "はい、人由来のエクソームは再生医療と高度な治療に使用されます。",
+        "image": "https://example.com/images/human_exosome.jpg"
+      },
+      "脱毛防止のエクソームはありますか？": {
+        "text": "はい、髪の成長を促進し、脱毛を防ぐエクソームを提供しています。",
+        "image": "https://example.com/images/hair_loss_exosome.jpg"
+      },
+      "アンチエイジング用のエクソームはありますか？": {
+        "text": "はい、肌の弾力性を改善し、老化の兆候を減少させるエクソームを提供しています。",
+        "image": "https://example.com/images/anti_aging_exosome.jpg"
+      },
+      "ニキビ用のエクソームはありますか？": {
+        "text": "はい、ニキビを減少させ、皮膚の治癒を促進するエクソームを提供しています。",
+        "image": "https://example.com/images/acne_exosome.jpg"
+      },
+      "コラーゲン用のエクソームはありますか？": {
+        "text": "はい、コラーゲンを増加させ、肌の質感と弾力を改善するエクソームを提供しています。",
+        "image": "https://example.com/images/collagen_exosome.jpg"
+      }
+    },
+    "STEMON": {
+      "STEMONは何をしていますか？": {
+        "text": "STEMONはバイオテクノロジーおよびエクソーム製造に特化し、再生医療やスキンケア、研究用ソリューションを提供します。",
+        "image": "https://example.com/images/stemon.jpg"
+      },
+      "会社はどこにありますか？": {
+        "text": "当社は韓国に本社を置き、グローバルに活動しています。",
+        "image": "https://example.com/images/company_location.jpg"
+      },
+      "製造会社ですか？": {
+        "text": "はい、STEMONはエクソームおよび関連するバイオ製品を製造する会社です。",
+        "image": "https://example.com/images/manufacturing.jpg"
+      },
+      "どの国に輸出していますか？": {
+        "text": "当社はアジア、ヨーロッパ、北米、および中東の国々に製品を輸出しています。",
+        "image": "https://example.com/images/export_countries.jpg"
+      }
+    },
+    "Reprosome": {
+      "Reprosomeとは何ですか？": {
+        "text": "Reprosomeは、エクソームに似た細胞外小胞で、生殖健康と細胞再生に特化しています。",
+        "image": "https://example.com/images/reprosome.jpg"
+      },
+      "エクソームとReprosomeの違いは何ですか？": {
+        "text": "エクソームは細胞間通信に関与し、Reprosomeは生殖健康と細胞再生に特化しています。",
+        "image": "https://example.com/images/exosome_vs_reprosome.jpg"
+      }
+    }
+  }
+}

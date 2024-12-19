@@ -275,6 +275,13 @@ body {
     text-align: left;
 }
 
+.qna-page .answer img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
 @media screen and (max-width: 768px) {
     .qna-page .header {
         flex-direction: column;
