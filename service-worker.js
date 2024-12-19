@@ -1,7 +1,8 @@
 const CACHE_NAME = 'qna-pwa-cache-v1';
 const urlsToCache = [
-    './', // Ensure it works for relative deployments
+    './',
     './index.html',
+    './qna.html',
     './style.css',
     './script.js',
     './manifest.json',
