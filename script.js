@@ -8,7 +8,7 @@ function loadQuestions(translations, language) {
 
     sections.forEach(section => {
         const container = document.getElementById(`${section.toLowerCase()}-questions`);
-        container.innerHTML = ""; 
+        container.innerHTML = "";
 
         const questions = translations[language][section];
         Object.entries(questions).forEach(([question, data]) => {
@@ -19,7 +19,7 @@ function loadQuestions(translations, language) {
                 <div class="question-text">${question}</div>
                 <div class="answer">
                     <p>${data.text}</p>
-                    ${data.image ? `<img src="${data.image}" alt="${question}">` : ""}
+                    ${data.image ? `<img src="${data.image}" alt="${question}" loading="lazy">` : ""}
                 </div>
             `;
 

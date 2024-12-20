@@ -1,6 +1,6 @@
 const CACHE_NAME = 'qna-pwa-cache-v1';
 const urlsToCache = [
-    './', 
+    './',
     './index.html',
     './qna.html',
     './style.css',
@@ -32,10 +32,8 @@ self.addEventListener('fetch', event => {
     console.log(`[Service Worker] Fetching: ${event.request.url}`);
     event.respondWith(
         caches.match(event.request).then(response => {
-            // Serve cache first, then fallback to network
             return response || fetch(event.request);
         }).catch(() => {
-            // Fallback for offline scenarios
             if (event.request.destination === 'document') {
                 return caches.match('./index.html');
             }
