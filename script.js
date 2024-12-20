@@ -19,7 +19,7 @@ function loadQuestions(translations, language) {
                 <div class="question-text">${question}</div>
                 <div class="answer">
                     <p>${data.text}</p>
-                    ${data.image ? `<img src="${data.image}" alt="${question}" loading="lazy">` : ""}
+                    ${data.image ? `<img src="${data.image}" alt="${question}">` : ""}
                 </div>
             `;
 
