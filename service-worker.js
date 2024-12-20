@@ -1,4 +1,4 @@
-const CACHE_NAME = 'qna-pwa-cache-v1';
+const CACHE_NAME = 'qna-pwa-cache-v2';
 const urlsToCache = [
     './',
     './index.html',
@@ -16,7 +16,7 @@ const urlsToCache = [
     './images/usa.jpg',
 ];
 
-// Install event
+// Install event - Caches all required files
 self.addEventListener('install', event => {
     console.log('[Service Worker] Install');
     event.waitUntil(
@@ -27,21 +27,38 @@ self.addEventListener('install', event => {
     );
 });
 
-// Fetch event
+// Fetch event - Serve files from cache first, then fallback to network
 self.addEventListener('fetch', event => {
     console.log(`[Service Worker] Fetching: ${event.request.url}`);
     event.respondWith(
         caches.match(event.request).then(response => {
-            return response || fetch(event.request);
-        }).catch(() => {
-            if (event.request.destination === 'document') {
-                return caches.match('./index.html');
+            if (response) {
+                return response;
             }
+            return fetch(event.request)
+                .then(networkResponse => {
+                    // Optionally cache new files retrieved from the network
+                    return caches.open(CACHE_NAME).then(cache => {
+                        if (event.request.method === 'GET') {
+                            cache.put(event.request, networkResponse.clone());
+                        }
+                        return networkResponse;
+                    });
+                })
+                .catch(() => {
+                    // Offline fallback
+                    if (event.request.destination === 'document') {
+                        if (event.request.url.includes('qna.html')) {
+                            return caches.match('./qna.html');
+                        }
+                        return caches.match('./index.html');
+                    }
+                });
         })
     );
 });
 
-// Activate event
+// Activate event - Clean up old caches
 self.addEventListener('activate', event => {
     console.log('[Service Worker] Activate');
     const cacheWhitelist = [CACHE_NAME];
