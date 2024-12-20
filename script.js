@@ -8,7 +8,7 @@ function loadQuestions(translations, language) {
 
     sections.forEach(section => {
         const container = document.getElementById(`${section.toLowerCase()}-questions`);
-        container.innerHTML = ""; 
+        container.innerHTML = "";
 
         const questions = translations[language][section];
         Object.entries(questions).forEach(([question, data]) => {
