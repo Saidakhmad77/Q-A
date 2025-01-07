@@ -29,6 +29,7 @@ function loadQuestions(translations, language) {
                 `;
 
                 questionDiv.addEventListener("click", () => {
+                    closeAllAnswers();
                     const answersDiv = questionDiv.querySelectorAll(".answer");
                     answersDiv.forEach(answerDiv => {
                         const isVisible = answerDiv.style.display === "block";
@@ -46,9 +47,9 @@ function loadQuestions(translations, language) {
                 `;
 
                 questionDiv.addEventListener("click", () => {
+                    closeAllAnswers();
                     const answerDiv = questionDiv.querySelector(".answer");
                     const isVisible = answerDiv.style.display === "block";
-                    document.querySelectorAll(".answer").forEach(a => a.style.display = "none");
                     answerDiv.style.display = isVisible ? "none" : "block";
                 });
             }
@@ -56,6 +57,11 @@ function loadQuestions(translations, language) {
             container.appendChild(questionDiv);
         });
     });
+}
+
+// Function to close all answers
+function closeAllAnswers() {
+    document.querySelectorAll(".answer").forEach(answer => answer.style.display = "none");
 }
 
 function setLanguage(language) {
