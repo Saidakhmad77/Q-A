@@ -4,7 +4,7 @@ async function fetchTranslations() {
 }
 
 function loadQuestions(translations, language) {
-    const sections = ["Exosome", "STEMON", "Reprosome"];
+    const sections = ["Exosome"];
 
     sections.forEach(section => {
         const container = document.getElementById(`${section.toLowerCase()}-questions`);
@@ -15,20 +15,43 @@ function loadQuestions(translations, language) {
             const questionDiv = document.createElement("div");
             questionDiv.className = "question";
 
-            questionDiv.innerHTML = `
-                <div class="question-text">${question}</div>
-                <div class="answer">
-                    <p>${data.text}</p>
-                    ${data.image ? `<img src="${data.image}" alt="${question}">` : ""}
-                </div>
-            `;
+            if (Array.isArray(data)) {
+                questionDiv.innerHTML = `
+                    <div class="question-text">${question}</div>
+                    <div class="answers">
+                        ${data.map((answer, index) => `
+                            <div class="answer" style="display: none;">
+                                <p>${answer.text}</p>
+                                ${answer.image ? `<img src="${answer.image}" alt="${question} Answer ${index + 1}">` : ""}
+                            </div>
+                        `).join("")}
+                    </div>
+                `;
 
-            questionDiv.addEventListener("click", () => {
-                const answerDiv = questionDiv.querySelector(".answer");
-                const isVisible = answerDiv.style.display === "block";
-                document.querySelectorAll(".answer").forEach(a => a.style.display = "none");
-                answerDiv.style.display = isVisible ? "none" : "block";
-            });
+                questionDiv.addEventListener("click", () => {
+                    const answersDiv = questionDiv.querySelectorAll(".answer");
+                    answersDiv.forEach(answerDiv => {
+                        const isVisible = answerDiv.style.display === "block";
+                        answerDiv.style.display = isVisible ? "none" : "block";
+                    });
+                });
+
+            } else {
+                questionDiv.innerHTML = `
+                    <div class="question-text">${question}</div>
+                    <div class="answer" style="display: none;">
+                        <p>${data.text}</p>
+                        ${data.image ? `<img src="${data.image}" alt="${question}">` : ""}
+                    </div>
+                `;
+
+                questionDiv.addEventListener("click", () => {
+                    const answerDiv = questionDiv.querySelector(".answer");
+                    const isVisible = answerDiv.style.display === "block";
+                    document.querySelectorAll(".answer").forEach(a => a.style.display = "none");
+                    answerDiv.style.display = isVisible ? "none" : "block";
+                });
+            }
 
             container.appendChild(questionDiv);
         });
