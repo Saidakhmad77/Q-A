@@ -6,8 +6,10 @@ async function fetchTranslations() {
 function loadQuestions(translations, language) {
     const sections = ["Exosome"];
 
-    sections.forEach(section => {
-        const container = document.getElementById(`${section.toLowerCase()}-questions`);
+    sections.forEach((section) => {
+        const container = document.getElementById(
+            `${section.toLowerCase()}-questions`
+        );
         container.innerHTML = "";
 
         const questions = translations[language][section];
@@ -18,38 +20,93 @@ function loadQuestions(translations, language) {
             if (Array.isArray(data)) {
                 questionDiv.innerHTML = `
                     <div class="question-text">${question}</div>
-                    <div class="answers">
-                        ${data.map((answer, index) => `
-                            <div class="answer" style="display: none;">
-                                <p>${answer.text}</p>
-                                ${answer.image ? `<img src="${answer.image}" alt="${question} Answer ${index + 1}">` : ""}
-                            </div>
-                        `).join("")}
+                    <div class="answer-section" style="display: none;">
+                        <div class="answer-navigation"></div>
+                        <div class="answers"></div>
                     </div>
                 `;
 
-                questionDiv.addEventListener("click", () => {
-                    closeAllAnswers();
-                    const answersDiv = questionDiv.querySelectorAll(".answer");
-                    answersDiv.forEach(answerDiv => {
-                        const isVisible = answerDiv.style.display === "block";
-                        answerDiv.style.display = isVisible ? "none" : "block";
+                const answerSection = questionDiv.querySelector(".answer-section");
+                const answerNavigation = questionDiv.querySelector(".answer-navigation");
+                const answersContainer = questionDiv.querySelector(".answers");
+
+                data.forEach((answer, index) => {
+                    // Add navigation buttons
+                    const button = document.createElement("button");
+                    button.className = "answer-button";
+                    button.innerText = index + 1;
+                    if (index === 0) button.classList.add("active"); // Highlight first button by default
+                    button.addEventListener("click", () => {
+                        // Hide all answers and show the one corresponding to the button
+                        Array.from(answersContainer.children).forEach((child, i) => {
+                            child.style.display = i === index ? "block" : "none";
+                        });
+
+                        // Update button styles
+                        Array.from(answerNavigation.children).forEach((btn, i) => {
+                            if (i === index) {
+                                btn.classList.add("active");
+                            } else {
+                                btn.classList.remove("active");
+                            }
+                        });
                     });
+                    answerNavigation.appendChild(button);
+
+                    // Add answers
+                    const answerDiv = document.createElement("div");
+                    answerDiv.className = "answer";
+                    answerDiv.style.display = index === 0 ? "block" : "none"; // Show first answer by default
+                    answerDiv.innerHTML = `
+                        <p>${answer.text}</p>
+                        ${
+                            answer.image
+                                ? `<img src="${answer.image}" alt="${question} Answer ${index + 1}">`
+                                : ""
+                        }
+                    `;
+                    answersContainer.appendChild(answerDiv);
                 });
 
+                questionDiv.addEventListener("click", (event) => {
+                    if (event.target.classList.contains("answer-button")) return;
+
+                    const isVisible = answerSection.style.display === "block";
+                    closeAllAnswers();
+
+                    if (!isVisible) {
+                        answerSection.style.display = "block";
+
+                        // Ensure the first answer and button are active by default
+                        Array.from(answersContainer.children).forEach((child, i) => {
+                            child.style.display = i === 0 ? "block" : "none";
+                        });
+                        Array.from(answerNavigation.children).forEach((btn, i) => {
+                            if (i === 0) {
+                                btn.classList.add("active");
+                            } else {
+                                btn.classList.remove("active");
+                            }
+                        });
+                    }
+                });
             } else {
                 questionDiv.innerHTML = `
                     <div class="question-text">${question}</div>
                     <div class="answer" style="display: none;">
                         <p>${data.text}</p>
-                        ${data.image ? `<img src="${data.image}" alt="${question}">` : ""}
+                        ${
+                            data.image
+                                ? `<img src="${data.image}" alt="${question}">`
+                                : ""
+                        }
                     </div>
                 `;
 
                 questionDiv.addEventListener("click", () => {
-                    closeAllAnswers();
                     const answerDiv = questionDiv.querySelector(".answer");
                     const isVisible = answerDiv.style.display === "block";
+                    closeAllAnswers();
                     answerDiv.style.display = isVisible ? "none" : "block";
                 });
             }
@@ -61,7 +118,12 @@ function loadQuestions(translations, language) {
 
 // Function to close all answers
 function closeAllAnswers() {
-    document.querySelectorAll(".answer").forEach(answer => answer.style.display = "none");
+    document.querySelectorAll(".answer-section").forEach((section) => {
+        section.style.display = "none";
+    });
+    document.querySelectorAll(".answer").forEach((answer) => {
+        answer.style.display = "none";
+    });
 }
 
 function setLanguage(language) {
@@ -124,26 +186,29 @@ const translations = {
 };
 
 function changeLanguage(lang) {
-    localStorage.setItem('selectedLanguage', lang);
+    localStorage.setItem("selectedLanguage", lang);
 
-    document.getElementById('welcome-title').innerText = translations[lang].welcomeTitle;
-    document.getElementById('welcome-text').innerText = translations[lang].welcomeText;
-    document.getElementById('welcome-additional').innerText = translations[lang].welcomeAdditional;
+    document.getElementById("welcome-title").innerText =
+        translations[lang].welcomeTitle;
+    document.getElementById("welcome-text").innerText =
+        translations[lang].welcomeText;
+    document.getElementById("welcome-additional").innerText =
+        translations[lang].welcomeAdditional;
 
-    const languageDropdown = document.getElementById('header-language');
+    const languageDropdown = document.getElementById("header-language");
     if (languageDropdown) {
         languageDropdown.value = lang;
     }
 }
 
 function loadLanguage() {
-    const savedLanguage = localStorage.getItem('selectedLanguage') || 'en';
+    const savedLanguage = localStorage.getItem("selectedLanguage") || "en";
     changeLanguage(savedLanguage);
 }
 
 window.onload = loadLanguage;
 
 function navigateToQnA(lang) {
-    localStorage.setItem('selectedLanguage', lang); 
-    window.location.href = `qna.html?lang=${lang}`; 
+    localStorage.setItem("selectedLanguage", lang);
+    window.location.href = `qna.html?lang=${lang}`;
 }

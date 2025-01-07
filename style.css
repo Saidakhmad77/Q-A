@@ -293,3 +293,35 @@ body {
         margin-top: 10px;
     }
 }
+
+.answer-button {
+    width: 40px;
+    height: 40px;
+    margin: 0 8px;
+    border: none;
+    border-radius: 50%;
+    background-color: #ff4d4d;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    display: inline-block;
+}
+
+.answer-button.active {
+    background-color: #581212;
+    transform: scale(1.1);
+}
+
+.answer-button:hover {
+    background-color: #e63939;
+    transform: scale(1.05);
+}
+
+.answer-navigation {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
