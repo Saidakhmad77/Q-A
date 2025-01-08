@@ -37,10 +37,16 @@
           "image": "images/qna5.jpg"
         }
       ],
-      "What is targets for each exosomes?": {
-        "text": "Our exosomes are targeted for skincare, regenerative medicine, and immune response enhancement.",
-        "image": "images/qna_6.jpg"
-      }
+      "What is targets for each exosomes?": [
+        {
+          "text": "Our exosomes are targeted for skincare, regenerative medicine, and immune response enhancement.",
+          "image": "images/qna_6.jpg"
+        },
+        {
+          "text": "Our exosomes are targeted for skincare, regenerative medicine, and immune response enhancement.",
+          "image": "images/qna6.1.jpg"
+        }
+      ]
     }
   },
   "jp": {
