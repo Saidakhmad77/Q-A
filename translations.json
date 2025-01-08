@@ -41,29 +41,29 @@
       },
       "その役割は何ですか？": {
         "text": "エクソームを肌に塗布すると、1分以内に皮膚の毛穴から肌に完全に吸収され、毛包の真皮層に到達し、損傷した細胞を再生します。",
-        "image": "images/exosome.gif"
+        "image": "images/qna2.gif"
       },
       "STEMONのエクソームは他の会社とどう違いますか？": [
         {
           "text": "1. 国際的な論文と特許で認定された独自のエクソーム誘導コア技術です。",
-          "image": "images/exosome.gif"
+          "image": "images/qna3_1.jpg"
         },
         {
           "text": "2. STEMONは、エクソームをデジタルに誘導するためのオリジナル技術を自動化できるUltraReproを世界で初めて発明しました。",
-          "image": "images/exosome.gif"
+          "image": "images/qna3_2.gif"
         },
         {
           "text": "3. UltraReproは高い均一性を持つエクソームを提供します。",
-          "image": "images/exosome.gif"
+          "image": "images/qna3_3.jpg"
         }
       ],
       "エクソームには何種類ありますか？": {
         "text": "現在、エクソームは人間、魚、植物からの16種類があります。これらはアメリカ、日本、中国、ヨーロッパでSTEMONの名前で登録されています。",
-        "image": "images/exosome.gif"
+        "image": "images/qna4(en).jpg"
       },
       "エクソームのターゲットは何ですか？": {
         "text": "当社のエクソームはスキンケア、再生医療、および免疫応答の強化を対象としています。",
-        "image": "images/exosome.gif"
+        "image": "images/qna_5.jpg"
       }
     }
   },
@@ -75,29 +75,29 @@
       },
       "它的作用是什么？": {
         "text": "外泌体涂抹于皮肤时，可在一分钟内通过皮肤毛孔完全吸收，达到真皮层并通过毛囊吸收进入细胞以再生受损细胞。",
-        "image": "images/exosome.gif"
+        "image": "images/qna2.gif"
       },
       "STEMON的外泌体与其他公司的有何不同？": [
         {
-          "text": "它是一种通过国际论文和专利认证的独特外泌体诱导核心技术。",
-          "image": "images/exosome.gif"
+          "text": "1. 它是一种通过国际论文和专利认证的独特外泌体诱导核心技术。",
+          "image": "images/qna3_1.jpg"
         },
         {
-          "text": "STEMON发明了UltraRepro，能够首次在世界上实现外泌体诱导技术的数字化自动化。",
-          "image": "images/exosome.gif"
+          "text": "2. STEMON发明了UltraRepro，能够首次在世界上实现外泌体诱导技术的数字化自动化。",
+          "image": "images/qna3_2.gif"
         },
         {
-          "text": "UltraRepro 提供具有高均一性的外泌体。",
-          "image": "images/exosome.gif"
+          "text": "3. UltraRepro 提供具有高均一性的外泌体。",
+          "image": "images/qna3_3.jpg"
         }
       ],
       "你们有多少种外泌体？": {
         "text": "目前，有来自人类、鱼类和植物的16种外泌体。这些外泌体以STEMON的名义注册于美国、日本、中国和欧洲。",
-        "image": "images/exosome.gif"
+        "image": "images/qna4(zh).jpg"
       },
       "每种外泌体的目标是什么？": {
         "text": "我们的外泌体主要针对护肤、再生医学以及免疫反应增强。",
-        "image": "images/exosome.gif"
+        "image": "images/qna_5.jpg"
       }
     }
   }
