@@ -310,12 +310,12 @@ body {
 }
 
 .answer-button.active {
-    background-color: #581212;
+    background-color: #360a0a;
     transform: scale(1.1);
 }
 
 .answer-button:hover {
-    background-color: #e63939;
+    background-color: #a32727;
     transform: scale(1.05);
 }
 
