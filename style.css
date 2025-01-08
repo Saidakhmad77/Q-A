@@ -310,7 +310,7 @@ body {
 }
 
 .answer-button.active {
-    background-color: #360a0a;
+    background-color: #a32727;
     transform: scale(1.1);
 }
 
