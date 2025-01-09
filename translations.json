@@ -33,7 +33,7 @@
           "image": "images/qna5.jpg"
         },
         {
-          "text": "2. In general, Exosomes are bi-lipid layered particles ranging 50-200 nm with CD63, CD9, etc. when people or companies mentioned number of particles in their products, it indicates every particles inclduing exosomes. even water is particles (0.4 nm). In theory, particle of  1 cm x 1 cm in diameter can contain particles of 10⁷ × 10⁷ nm. Therefore, you have to understand when they mentioned the number of particles you have to ask number of exosomes in total particles of the products. In addition, Isolation of a billion of exosomes from stem cells from umblical cord or placenta, it costs more than 50,000 USD. Therefore, it is impossible for the products containing 1 billion exosomes to sell less than 100 USD.",
+          "text": "2. In general, Exosomes are bi-lipid layered particles ranging 50-200 nm with CD63, CD9, etc. When people or companies mentioned number of particles in their products, it indicates every particle including exosomes. Even water is particles (0.4 nm). In theory, particle of  1 cm x 1 cm in diameter can contain particles of 10⁷ × 10⁷ nm. Therefore, you have to understand when they mentioned the number of particles you have to ask number of exosomes in total particles of the products. In addition, Isolation of a billion of exosomes from stem cells from umbilical cord or placenta costs more than 50,000 USD. Therefore, it is impossible for the products containing 1 billion exosomes to sell less than 100 USD.",
           "image": "images/qna4.1.jpg"
         }
       ],
@@ -66,7 +66,7 @@
         },
         {
           "text": "2. STEMONは、エクソームをデジタルに誘導するためのオリジナル技術を自動化できるUltraReproを世界で初めて発明しました。",
-          "image": "images/qna3_2.gif"
+          "image": "images/qna3.2.gif"
         },
         {
           "text": "3. UltraReproは高い均一性を持つエクソームを提供します。",
@@ -77,10 +77,26 @@
         "text": "現在、エクソームは人間、魚、植物からの16種類があります。これらはアメリカ、日本、中国、ヨーロッパでSTEMONの名前で登録されています。",
         "image": "images/qna4(en).jpg"
       },
-      "エクソームのターゲットは何ですか？": {
-        "text": "当社のエクソームはスキンケア、再生医療、および免疫応答の強化を対象としています。",
-        "image": "images/qna_5.jpg"
-      }
+      "STEMONのアンプルに含まれるエクソームの数は？": [
+        {
+          "text": "1. 私たちの製品アンプルには、最終アンプルに1,000,000個のエクソームが含まれています。",
+          "image": "images/qna5.jpg"
+        },
+        {
+          "text": "2. 一般的に、エクソームは50-200 nmの二重脂質層の粒子であり、CD63、CD9などが含まれます。製品に含まれる粒子数が言及された場合、それはエクソームを含むすべての粒子を示します。水さえも粒子（0.4 nm）です。理論上、直径1 cm × 1 cmの粒子には10⁷ × 10⁷ nmの粒子が含まれる可能性があります。そのため、粒子数が言及された場合、製品の総粒子数におけるエクソームの数を尋ねる必要があります。さらに、臍帯や胎盤からの幹細胞から10億個のエクソームを分離するには、50,000 USD以上のコストがかかります。したがって、10億個のエクソームを含む製品が100 USD未満で販売されることは不可能です。",
+          "image": "images/qna4.1.jpg"
+        }
+      ],
+      "各エクソームのターゲットは何ですか？": [
+        {
+          "text": "私たちのエクソームは、スキンケア、再生医療、および免疫応答の強化を対象としています。",
+          "image": "images/qna6.1.jpg"
+        },
+        {
+          "text": "私たちのエクソームは、スキンケア、再生医療、および免疫応答の強化を対象としています。",
+          "image": "images/qna_6.jpg"
+        }
+      ]
     }
   },
   "zh": {
@@ -100,7 +116,7 @@
         },
         {
           "text": "2. STEMON发明了UltraRepro，能够首次在世界上实现外泌体诱导技术的数字化自动化。",
-          "image": "images/qna3_2.gif"
+          "image": "images/qna3.2.gif"
         },
         {
           "text": "3. UltraRepro 提供具有高均一性的外泌体。",
@@ -111,10 +127,26 @@
         "text": "目前，有来自人类、鱼类和植物的16种外泌体。这些外泌体以STEMON的名义注册于美国、日本、中国和欧洲。",
         "image": "images/qna4(zh).jpg"
       },
-      "每种外泌体的目标是什么？": {
-        "text": "我们的外泌体主要针对护肤、再生医学以及免疫反应增强。",
-        "image": "images/qna_5.jpg"
-      }
+      "STEMON的安瓿中有多少外泌体？": [
+        {
+          "text": "1. 我们的产品安瓿中包含1,000,000个外泌体。",
+          "image": "images/qna5.jpg"
+        },
+        {
+          "text": "2. 通常，外泌体是50-200 nm的双脂质层颗粒，其中包含CD63、CD9等。当人们或公司提到其产品中的颗粒数量时，它表示包括外泌体的所有颗粒。甚至水也是颗粒（0.4 nm）。理论上，直径为1 cm × 1 cm的颗粒可以包含10⁷ × 10⁷ nm的颗粒。因此，您需要了解当他们提到颗粒数量时，您必须询问产品总颗粒中的外泌体数量。此外，从脐带或胎盘的干细胞中分离出10亿个外泌体的成本超过50,000美元。因此，包含10亿个外泌体的产品以低于100美元的价格出售是不可能的。",
+          "image": "images/qna4.1.jpg"
+        }
+      ],
+      "每种外泌体的目标是什么？": [
+        {
+          "text": "我们的外泌体主要针对护肤、再生医学以及免疫反应增强。",
+          "image": "images/qna6.1.jpg"
+        },
+        {
+          "text": "我们的外泌体主要针对护肤、再生医学以及免疫反应增强。",
+          "image": "images/qna_6.jpg"
+        }
+      ]
     }
   }
 }
