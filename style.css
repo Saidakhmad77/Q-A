@@ -250,7 +250,7 @@ body {
 .qna-page .questions-container {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
 }
 
 .qna-page .question {
@@ -324,4 +324,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+b {
+    font-weight: bold;
+    color: red; 
 }

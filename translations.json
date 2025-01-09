@@ -3,7 +3,7 @@
     "Exosome": {
       "What is exosome?": {
         "text": "Exosomes are new bio-renewable substances that are secreted by cells. Exosomes contain proteins and RNAs that are involved in regeneration.",
-        "image": "images/exosome.gif"
+        "image": "images/qna1.gif"
       },
       "What does it do?": {
         "text": "When topically applied to the skin, exosomes are completely absorbed into the skin through skin pores within a minute, reaching the dermis layer with hair follicles, and then absorbed into cells to regenerate damaged cells.",
@@ -11,7 +11,7 @@
       },
       "How is STEMON's exosomes different from other companies?": [
         {
-          "text": "1. It is a unique exosome induction core technology certified through international papers and patents.",
+          "text": "1. It is a unique exosome induction core technology certified through international papers and <b>96</b> international patents.",
           "image": "images/qna3_1.jpg"
         },
         {
@@ -29,17 +29,17 @@
       },
       "How many exosomes in STEMON's ampoules?": [
         {
-          "text": "1. Our product ampoule contains 1,000,000 exosomes in our final ampoule.",
+          "text": "1. Our product contains 1 million of CD63 marker-showing pure exosomes in the final ampoule that show statistically significant effect on cell regeneration.",
           "image": "images/qna5.jpg"
         },
         {
-          "text": "2. In general, Exosomes are bi-lipid layered particles ranging 50-200 nm with CD63, CD9, etc. When people or companies mentioned number of particles in their products, it indicates every particle including exosomes. Even water is particles (0.4 nm). In theory, particle of  1 cm x 1 cm in diameter can contain particles of 10⁷ × 10⁷ nm. Therefore, you have to understand when they mentioned the number of particles you have to ask number of exosomes in total particles of the products. In addition, Isolation of a billion of exosomes from stem cells from umbilical cord or placenta costs more than 50,000 USD. Therefore, it is impossible for the products containing 1 billion exosomes to sell less than 100 USD.",
+          "text": "2. Here are important points to understand about exosome particles:\n\n1. Exosomes are bi-lipid layered particles ranging between 50-200 nm in size and include markers like CD63 and CD9.\n\n2. When companies mention the number of particles in their products, it refers to all particles, not just exosomes. For example, water itself consists of particles measuring approximately 0.4 nm.\n\n3. In theory, a particle measuring 1 cm x 1 cm in diameter could contain up to 10⁷ × 10⁷ nm-sized particles.\n\n4. It's important to ask how many exosomes are present among the total particles in a product to get accurate information.\n\n5. Isolating 1 billion exosomes from stem cells, such as from the umbilical cord or placenta, costs more than 50,000 USD. Therefore, any product claiming to contain 1 billion exosomes priced below 100 USD is not feasible.",
           "image": "images/qna4.1.jpg"
         }
       ],
       "What is targets for each exosomes?": [
         {
-          "text": "Our exosomes are targeted for skincare, regenerative medicine, and immune response enhancement.",
+          "text": "Our exosomes are targeted for pharmaceutical effects including wrinkles, anti-aging, anti-inflammatory, anti-oxidant, whitening and hair growth.",
           "image": "images/qna6.1.jpg"
         },
         {
@@ -47,9 +47,17 @@
           "image": "images/qna_6.jpg"
         }
       ],
-      "What is DDDS?": {
-        "text": "Currently, there are 16 types of exosomes from humans, fish, and plants. They are registered in the United States, Japan, China, and Europe under the name of STEMON.",
+      "What is plant functional exosomes by DDDS?": {
+        "text": "Plant functional exosomes are created using the following steps:\n\n1. Two different ingredients, such as broccoli exosomes and beauty ingredients like collagen, hyaluronic acid (HA), or PLLA, are combined for beauty purposes.\n\n2. The Digital Drug Delivery System (DDDS) loads beauty ingredients into exosomes.\n\n3. As a result, HA, PLLA, or collagen in broccoli exosomes can be directly delivered into cells without injection.",
         "image": "images/ddds(en).gif"
+      },
+      "What is MOQ and price?": {
+        "text": "HS Code: 3304.99.1000 Export Condition: Ex-works(EXW)",
+        "image": "images/qna8.jpg"
+      },
+      "How to use raw materials of STEMON's exosome for your products?": {
+        "text": "",
+        "image": "images/qna9.jpg"
       }
     }
   },
@@ -57,10 +65,10 @@
     "Exosome": {
       "エクソームとは何ですか？": {
         "text": "エクソームは細胞から分泌される新しいバイオ再生物質です。エクソームには再生に関与するタンパク質やRNAが含まれています。",
-        "image": "images/exosome.gif"
+        "image": "images/qna1.gif"
       },
       "その役割は何ですか？": {
-        "text": "エクソームを肌に塗布すると、1分以内に皮膚の毛穴から肌に完全に吸収され、毛包の真皮層に到達し、損傷した細胞を再生します。",
+        "text": "エクソームを肌に塗布すると、1分以内に皮膚の毛穴から完全に吸収され、毛包の真皮層に到達し、損傷した細胞を再生します。",
         "image": "images/qna2.gif"
       },
       "STEMONのエクソームは他の会社とどう違いますか？": [
@@ -83,31 +91,43 @@
       },
       "STEMONのアンプルに含まれるエクソームの数は？": [
         {
-          "text": "1. 私たちの製品アンプルには、最終アンプルに1,000,000個のエクソームが含まれています。",
+          "text": "1. 私たちの製品には最終アンプルに1,000,000個のエクソームが含まれています。これらは細胞再生に統計的に有意な効果を示します。",
           "image": "images/qna5.jpg"
         },
         {
-          "text": "2. 一般的に、エクソームは50-200 nmの二重脂質層の粒子であり、CD63、CD9などが含まれます。製品に含まれる粒子数が言及された場合、それはエクソームを含むすべての粒子を示します。水さえも粒子（0.4 nm）です。理論上、直径1 cm × 1 cmの粒子には10⁷ × 10⁷ nmの粒子が含まれる可能性があります。そのため、粒子数が言及された場合、製品の総粒子数におけるエクソームの数を尋ねる必要があります。さらに、臍帯や胎盤からの幹細胞から10億個のエクソームを分離するには、50,000 USD以上のコストがかかります。したがって、10億個のエクソームを含む製品が100 USD未満で販売されることは不可能です。",
+          "text": "2. エクソーム粒子について理解すべき重要なポイント:\n\n1. エクソームは、50〜200nmの二重脂質層の粒子であり、CD63やCD9などのマーカーが含まれています。\n\n2. 製品中の粒子数を言及するとき、それはエクソームだけでなくすべての粒子を指します。たとえば、水自体も約0.4nmの粒子で構成されています。\n\n3. 理論的には、直径1cm x 1cmの粒子は、最大10⁷×10⁷nmサイズの粒子を含む可能性があります。\n\n4. 製品中の全粒子の中でどれだけのエクソームが存在するかを確認することが重要です。\n\n5. 幹細胞（臍帯や胎盤など）から10億個のエクソームを分離するには、50,000USD以上のコストがかかります。そのため、10億個のエクソームを含む製品が100USD未満で販売されることは非現実的です。",
           "image": "images/qna4.1.jpg"
         }
       ],
       "各エクソームのターゲットは何ですか？": [
         {
-          "text": "私たちのエクソームは、スキンケア、再生医療、および免疫応答の強化を対象としています。",
+          "text": "私たちのエクソームは、しわ、抗老化、抗炎症、抗酸化、ホワイトニング、毛髪成長などの薬理効果を対象としています。",
           "image": "images/qna6.1.jpg"
         },
         {
-          "text": "私たちのエクソームは、スキンケア、再生医療、および免疫応答の強化を対象としています。",
+          "text": "私たちのエクソームは、スキンケア、再生医療、免疫応答の強化を目的としています。",
           "image": "images/qna_6.jpg"
         }
-      ]
+      ],
+      "DDDSによる植物機能性エクソームとは何ですか？": {
+        "text": "植物機能性エクソームは以下の手順で作られます:\n\n1. ブロッコリーエクソームなどの成分とコラーゲンやヒアルロン酸(HA)、PLLAなどの美容成分を結合します。\n\n2. デジタルドラッグデリバリーシステム(DDDS)が美容成分をエクソームに充填します。\n\n3. 結果として、ブロッコリーエクソーム中のHA、PLLA、またはコラーゲンが注射なしで細胞に直接届けられます。",
+        "image": "images/ddds(en).gif"
+      },
+      "MOQと価格は？": {
+        "text": "HSコード: 3304.99.1000 輸出条件: Ex-works(EXW)",
+        "image": "images/qna8.jpg"
+      },
+      "STEMONのエクソームの原料をどのように製品に使用しますか？": {
+        "text": "",
+        "image": "images/qna9.jpg"
+      }
     }
   },
   "zh": {
     "Exosome": {
       "什么是外泌体？": {
         "text": "外泌体是由细胞分泌的新型可再生生物物质。外泌体中含有参与再生的蛋白质和RNA。",
-        "image": "images/exosome.gif"
+        "image": "images/qna1.gif"
       },
       "它的作用是什么？": {
         "text": "外泌体涂抹于皮肤时，可在一分钟内通过皮肤毛孔完全吸收，达到真皮层并通过毛囊吸收进入细胞以再生受损细胞。",
@@ -115,7 +135,7 @@
       },
       "STEMON的外泌体与其他公司的有何不同？": [
         {
-          "text": "1. 它是一种通过国际论文和专利认证的独特外泌体诱导核心技术。",
+          "text": "1. 它是一种通过国际论文和96项国际专利认证的独特外泌体诱导核心技术。",
           "image": "images/qna3_1.jpg"
         },
         {
@@ -133,24 +153,36 @@
       },
       "STEMON的安瓿中有多少外泌体？": [
         {
-          "text": "1. 我们的产品安瓿中包含1,000,000个外泌体。",
+          "text": "1. 我们的产品安瓿中包含1,000,000个外泌体。这些外泌体在细胞再生方面表现出显著的统计效果。",
           "image": "images/qna5.jpg"
         },
         {
-          "text": "2. 通常，外泌体是50-200 nm的双脂质层颗粒，其中包含CD63、CD9等。当人们或公司提到其产品中的颗粒数量时，它表示包括外泌体的所有颗粒。甚至水也是颗粒（0.4 nm）。理论上，直径为1 cm × 1 cm的颗粒可以包含10⁷ × 10⁷ nm的颗粒。因此，您需要了解当他们提到颗粒数量时，您必须询问产品总颗粒中的外泌体数量。此外，从脐带或胎盘的干细胞中分离出10亿个外泌体的成本超过50,000美元。因此，包含10亿个外泌体的产品以低于100美元的价格出售是不可能的。",
+          "text": "2. 关于外泌体粒子的一些重要信息:\n\n1. 外泌体是直径为50至200nm的双层脂质颗粒，包括CD63和CD9等标记物。\n\n2. 公司提到其产品中的颗粒数量时，是指所有颗粒，而不仅仅是外泌体。例如，水的颗粒尺寸约为0.4nm。\n\n3. 理论上，一个直径为1cm×1cm的颗粒可以包含最多10⁷×10⁷个nm级颗粒。\n\n4. 了解产品中总颗粒中的外泌体数量非常重要。\n\n5. 从脐带或胎盘的干细胞中分离10亿个外泌体的成本超过50,000美元。因此，任何声称含有10亿个外泌体且价格低于100美元的产品都是不现实的。",
           "image": "images/qna4.1.jpg"
         }
       ],
       "每种外泌体的目标是什么？": [
         {
-          "text": "我们的外泌体主要针对护肤、再生医学以及免疫反应增强。",
+          "text": "我们的外泌体专注于药理作用，包括抗皱、抗衰老、抗炎、抗氧化、美白和促进头发生长。",
           "image": "images/qna6.1.jpg"
         },
         {
-          "text": "我们的外泌体主要针对护肤、再生医学以及免疫反应增强。",
+          "text": "我们的外泌体主要用于护肤、再生医学以及增强免疫反应。",
           "image": "images/qna_6.jpg"
         }
-      ]
+      ],
+      "什么是DDDS植物功能外泌体？": {
+        "text": "植物功能外泌体通过以下步骤创建:\n\n1. 结合两种不同的成分，例如西兰花外泌体和美容成分（如胶原蛋白、透明质酸(HA)或PLLA）。\n\n2. 使用数字药物递送系统(DDDS)将美容成分加载到外泌体中。\n\n3. 结果是HA、PLLA或胶原蛋白可以通过西兰花外泌体直接递送到细胞中，而无需注射。",
+        "image": "images/ddds(en).gif"
+      },
+      "MOQ和价格是多少？": {
+        "text": "海关编码: 3304.99.1000 出口条件: 工厂交货(EXW)",
+        "image": "images/qna8.jpg"
+      },
+      "如何将STEMON的外泌体原料用于您的产品？": {
+        "text": "",
+        "image": "images/qna9.jpg"
+      }
     }
   }
 }
