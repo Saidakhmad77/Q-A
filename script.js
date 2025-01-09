@@ -17,14 +17,24 @@ function loadQuestions(translations, language) {
             const questionDiv = document.createElement("div");
             questionDiv.className = "question";
 
+            // Add a toggle icon
+            const toggleIcon = document.createElement("span");
+            toggleIcon.className = "toggle-icon";
+            toggleIcon.innerHTML = "&#9654;"; // Right arrow (closed state)
+
             if (Array.isArray(data)) {
                 questionDiv.innerHTML = `
-                    <div class="question-text">${question}</div>
+                    <div class="question-header">
+                        <div class="question-text">${question}</div>
+                    </div>
                     <div class="answer-section" style="display: none;">
                         <div class="answer-navigation"></div>
                         <div class="answers"></div>
                     </div>
                 `;
+
+                const header = questionDiv.querySelector(".question-header");
+                header.appendChild(toggleIcon);
 
                 const answerSection = questionDiv.querySelector(".answer-section");
                 const answerNavigation = questionDiv.querySelector(".answer-navigation");
@@ -68,14 +78,13 @@ function loadQuestions(translations, language) {
                     answersContainer.appendChild(answerDiv);
                 });
 
-                questionDiv.addEventListener("click", (event) => {
-                    if (event.target.classList.contains("answer-button")) return;
-
+                header.addEventListener("click", () => {
                     const isVisible = answerSection.style.display === "block";
                     closeAllAnswers();
 
                     if (!isVisible) {
                         answerSection.style.display = "block";
+                        toggleIcon.innerHTML = "&#9660;"; // Down arrow (open state)
 
                         // Ensure the first answer and button are active by default
                         Array.from(answersContainer.children).forEach((child, i) => {
@@ -88,11 +97,16 @@ function loadQuestions(translations, language) {
                                 btn.classList.remove("active");
                             }
                         });
+                    } else {
+                        answerSection.style.display = "none";
+                        toggleIcon.innerHTML = "&#9654;"; // Right arrow (closed state)
                     }
                 });
             } else {
                 questionDiv.innerHTML = `
-                    <div class="question-text">${question}</div>
+                    <div class="question-header">
+                        <div class="question-text">${question}</div>
+                    </div>
                     <div class="answer" style="display: none;">
                         <p>${data.text}</p>
                         ${
@@ -103,11 +117,20 @@ function loadQuestions(translations, language) {
                     </div>
                 `;
 
-                questionDiv.addEventListener("click", () => {
+                const header = questionDiv.querySelector(".question-header");
+                header.appendChild(toggleIcon);
+
+                header.addEventListener("click", () => {
                     const answerDiv = questionDiv.querySelector(".answer");
                     const isVisible = answerDiv.style.display === "block";
                     closeAllAnswers();
-                    answerDiv.style.display = isVisible ? "none" : "block";
+                    if (!isVisible) {
+                        answerDiv.style.display = "block";
+                        toggleIcon.innerHTML = "&#9660;"; // Down arrow (open state)
+                    } else {
+                        answerDiv.style.display = "none";
+                        toggleIcon.innerHTML = "&#9654;"; // Right arrow (closed state)
+                    }
                 });
             }
 
@@ -123,6 +146,9 @@ function closeAllAnswers() {
     });
     document.querySelectorAll(".answer").forEach((answer) => {
         answer.style.display = "none";
+    });
+    document.querySelectorAll(".toggle-icon").forEach((icon) => {
+        icon.innerHTML = "&#9654;"; // Reset all icons to closed state
     });
 }
 
