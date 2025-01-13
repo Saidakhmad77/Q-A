@@ -101,7 +101,7 @@ body {
 .index-page .language-button .text-overlay {
     position: absolute;
     bottom: 5px;
-    left: 55%;
+    left: 50%;
     transform: translateX(-50%);
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
