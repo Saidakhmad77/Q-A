@@ -22,39 +22,31 @@ body {
 }
 
 .index-page .header h1 {
-    text-align: center;
     flex: 1;
+    text-align: center;
     font-size: 2rem;
-    margin: 0;
 }
 
 .index-page .header .logo {
     height: 50px;
 }
 
-.index-page .language-selector {
+.index-page .header-icons {
     display: flex;
     align-items: center;
-    gap: 10px;
-    font-size: 1rem;
-    color: white;
+    gap: 15px;
 }
 
-.index-page .language-selector select {
-    padding: 5px 10px;
-    font-size: 1rem;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    outline: none;
-    background-color: white;
-    color: #003366;
-    transition: all 0.3s ease;
+.index-page .home-icon {
+    width: 30px;
+    height: 30px;
     cursor: pointer;
 }
 
-.index-page .language-selector select:hover {
-    background-color: #e5f1ff;
-    border: 1px solid #005bb3;
+.index-page .language-selector select {
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1rem;
 }
 
 .index-page .main-language {
@@ -139,6 +131,15 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+    .index-page .header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .index-page .language-selector {
+        margin-top: 10px;
+    }
+
     .index-page .main-language {
         margin-top: 40px;
     }
@@ -328,5 +329,5 @@ body {
 
 b {
     font-weight: bold;
-    color: red; 
+    color: red;
 }
