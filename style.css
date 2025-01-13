@@ -85,14 +85,17 @@ body {
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .index-page .language-button img {
-    width: 110%;
-    height: 99%;
-    object-fit: cover;
-    object-position: center;
+    width: auto;
+    height: 100%;
+    object-fit: contain;
     display: block;
+    border-radius: 15px;
 }
 
 .index-page .language-button .text-overlay {
