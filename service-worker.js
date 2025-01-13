@@ -41,7 +41,7 @@ self.addEventListener('install', event => {
             })
             .catch(err => console.error('[Service Worker] Caching failed:', err))
     );
-    self.skipWaiting();
+    self.skipWaiting(); // Immediately activate the new service worker
 });
 
 // Fetch event - Normalize URLs and serve from cache
@@ -97,5 +97,5 @@ self.addEventListener('activate', event => {
             );
         })
     );
-    self.clients.claim();
+    self.clients.claim(); // Immediately control active clients
 });
