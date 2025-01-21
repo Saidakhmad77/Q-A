@@ -17,7 +17,6 @@ function loadQuestions(translations, language) {
             const questionDiv = document.createElement("div");
             questionDiv.className = "question";
 
-            // Add a toggle icon
             const toggleIcon = document.createElement("span");
             toggleIcon.className = "toggle-icon";
             toggleIcon.innerHTML = "&#9654;"; // Right arrow (closed state)
@@ -40,6 +39,9 @@ function loadQuestions(translations, language) {
                 const answerNavigation = questionDiv.querySelector(".answer-navigation");
                 const answersContainer = questionDiv.querySelector(".answers");
 
+                let currentAnswerIndex = 0; // Track current answer index
+                let startX = 0; // Store starting X-coordinate for swipe
+
                 data.forEach((answer, index) => {
                     // Add navigation buttons
                     const button = document.createElement("button");
@@ -47,19 +49,8 @@ function loadQuestions(translations, language) {
                     button.innerText = index + 1;
                     if (index === 0) button.classList.add("active"); // Highlight first button by default
                     button.addEventListener("click", () => {
-                        // Hide all answers and show the one corresponding to the button
-                        Array.from(answersContainer.children).forEach((child, i) => {
-                            child.style.display = i === index ? "block" : "none";
-                        });
-
-                        // Update button styles
-                        Array.from(answerNavigation.children).forEach((btn, i) => {
-                            if (i === index) {
-                                btn.classList.add("active");
-                            } else {
-                                btn.classList.remove("active");
-                            }
-                        });
+                        currentAnswerIndex = index; // Update current answer index
+                        updateAnswerDisplay(index);
                     });
                     answerNavigation.appendChild(button);
 
@@ -77,6 +68,42 @@ function loadQuestions(translations, language) {
                     `;
                     answersContainer.appendChild(answerDiv);
                 });
+
+                // Swipe functionality
+                answersContainer.addEventListener("touchstart", (e) => {
+                    startX = e.touches[0].clientX; // Capture initial touch position
+                });
+
+                answersContainer.addEventListener("touchend", (e) => {
+                    const endX = e.changedTouches[0].clientX; // Capture final touch position
+                    const deltaX = endX - startX; // Calculate swipe distance
+
+                    if (Math.abs(deltaX) > 50) { // Minimum swipe distance threshold
+                        if (deltaX < 0 && currentAnswerIndex < data.length - 1) {
+                            // Swipe left: Next answer
+                            currentAnswerIndex++;
+                        } else if (deltaX > 0 && currentAnswerIndex > 0) {
+                            // Swipe right: Previous answer
+                            currentAnswerIndex--;
+                        }
+                        updateAnswerDisplay(currentAnswerIndex);
+                    }
+                });
+
+                const updateAnswerDisplay = (index) => {
+                    // Update answer display based on index
+                    Array.from(answersContainer.children).forEach((child, i) => {
+                        child.style.display = i === index ? "block" : "none";
+                    });
+
+                    Array.from(answerNavigation.children).forEach((btn, i) => {
+                        if (i === index) {
+                            btn.classList.add("active");
+                        } else {
+                            btn.classList.remove("active");
+                        }
+                    });
+                };
 
                 header.addEventListener("click", () => {
                     const isVisible = answerSection.style.display === "block";
@@ -210,31 +237,3 @@ const translations = {
         welcomeAdditional: "当社の治療法やバイオテクノロジー、一般的な会社情報についての回答をご用意しています。"
     }
 };
-
-function changeLanguage(lang) {
-    localStorage.setItem("selectedLanguage", lang);
-
-    document.getElementById("welcome-title").innerText =
-        translations[lang].welcomeTitle;
-    document.getElementById("welcome-text").innerText =
-        translations[lang].welcomeText;
-    document.getElementById("welcome-additional").innerText =
-        translations[lang].welcomeAdditional;
-
-    const languageDropdown = document.getElementById("header-language");
-    if (languageDropdown) {
-        languageDropdown.value = lang;
-    }
-}
-
-function loadLanguage() {
-    const savedLanguage = localStorage.getItem("selectedLanguage") || "en";
-    changeLanguage(savedLanguage);
-}
-
-window.onload = loadLanguage;
-
-function navigateToQnA(lang) {
-    localStorage.setItem("selectedLanguage", lang);
-    window.location.href = `qna.html?lang=${lang}`;
-}
