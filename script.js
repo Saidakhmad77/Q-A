@@ -19,7 +19,7 @@ function loadQuestions(translations, language) {
 
             const toggleIcon = document.createElement("span");
             toggleIcon.className = "toggle-icon";
-            toggleIcon.innerHTML = "&#9654;"; // Right arrow (closed state)
+            toggleIcon.innerHTML = "&#9654;";
 
             if (Array.isArray(data)) {
                 questionDiv.innerHTML = `
@@ -54,7 +54,6 @@ function loadQuestions(translations, language) {
                     });
                     answerNavigation.appendChild(button);
 
-                    // Add answers
                     const answerDiv = document.createElement("div");
                     answerDiv.className = "answer";
                     answerDiv.style.display = index === 0 ? "block" : "none"; // Show first answer by default
