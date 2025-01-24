@@ -55,10 +55,16 @@
         "text": "Clinical data using our PDRN Exosomes by one of our partners in Europe. For more details, visit <a href='https://www.e50exosomes.com/' target='_blank'>https://www.e50exosomes.com/</a>",
         "image": null
       },
-      "What is MOQ?": {
-        "text": "HS Code: 3304.99.1000 <br> Export Condition: Ex-works(EXW)",
-        "image": "images/qna8.jpg"
-      },
+      "What is MOQ and HS?": [
+        {
+          "text": "",
+          "image": "images/qna8.jpg"
+        },
+        {
+          "text": "",
+          "image": "images/qna8.1.jpg"
+        }
+      ],
       "How to use raw materials of STEMON's exosome for your products?": {
         "text": "",
         "image": "images/qna9.jpg"
