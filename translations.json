@@ -65,10 +65,16 @@
           "image": "images/qna8.1.jpg"
         }
       ],
-      "How to use raw materials of STEMON's exosome for your products?": {
-        "text": "",
-        "image": "images/qna9.jpg"
-      }
+      "How to use raw materials of STEMON's exosome for your products?": [
+        {
+          "text": "There are three options, and you can choose one.",
+          "image": "images/qna9.jpg"
+        },
+        {
+          "text": "There are three options, and you can choose one.",
+          "image": "images/qna9.1.jpg"
+        }
+      ]
     }
   },
   "jp": {
@@ -120,7 +126,7 @@
         }
       ],
       "DDDSによる植物機能性エクソームとは何ですか？": {
-"text": "植物由来のエクソソームは、新しく作られた美容成分です。以下の手順で作成されます：<br> 1. ブロッコリーエクソソームや、コラーゲン、ヒアルロン酸 (HA)、PLLA などの美容成分を1つの成分として組み合わせ、美容目的で使用します。<br> 2. デジタルドラッグデリバリーシステム (DDDS) によって美容成分をエクソソームにロードします。<br> 3. その結果、ブロッコリーエクソソーム内の HA、PLLA、またはコラーゲンが、注射なしで直接細胞に届けられます。",
+        "text": "植物由来のエクソソームは、新しく作られた美容成分です。以下の手順で作成されます：<br> 1. ブロッコリーエクソソームや、コラーゲン、ヒアルロン酸 (HA)、PLLA などの美容成分を1つの成分として組み合わせ、美容目的で使用します。<br> 2. デジタルドラッグデリバリーシステム (DDDS) によって美容成分をエクソソームにロードします。<br> 3. その結果、ブロッコリーエクソソーム内の HA、PLLA、またはコラーゲンが、注射なしで直接細胞に届けられます。",
         "image": "images/ddds(jp).gif"
       },
       "ヨーロッパのパートナーが使用した PDRN 外泌体の臨床データ": {
@@ -131,10 +137,16 @@
         "text": "HSコード: 3304.99.1000 <br> 輸出条件: Ex-works(EXW)",
         "image": "images/qna8.jpg"
       },
-      "STEMONのエクソームの原料をどのように製品に使用しますか？": {
-        "text": "",
-        "image": "images/qna9.jpg"
-      }
+      "STEMONのエクソソーム原料を製品に活用する方法": [
+    {
+      "text": "3つのオプションがあり、1つを選択できます。",
+      "image": "images/qna9.jpg"
+    },
+    {
+      "text": "3つのオプションがあり、1つを選択できます。",
+      "image": "images/qna9.1.jpg"
+    }
+  ]
     }
   },
   "zh": {
@@ -197,10 +209,16 @@
         "text": "海关编码: 3304.99.1000 <br> 出口条件: 工厂交货(EXW)",
         "image": "images/qna8.jpg"
       },
-      "如何将STEMON的外泌体原料用于您的产品？": {
-        "text": "",
-        "image": "images/qna9.jpg"
+      "如何使用STEMON的外泌体原料制作您的产品？": [
+      {
+      "text": "有三个选项，您可以选择其中一个。",
+      "image": "images/qna9.jpg"
+      },
+      {
+      "text": "有三个选项，您可以选择其中一个。",
+      "image": "images/qna9.1.jpg"
       }
+     ]
     }
   }
 }
