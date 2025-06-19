@@ -7,9 +7,7 @@ function loadQuestions(translations, language) {
     const sections = ["Exosome"];
 
     sections.forEach((section) => {
-        const container = document.getElementById(
-            `${section.toLowerCase()}-questions`
-        );
+        const container = document.getElementById(`${section.toLowerCase()}-questions`);
         container.innerHTML = "";
 
         const questions = translations[language][section];
@@ -39,50 +37,42 @@ function loadQuestions(translations, language) {
                 const answerNavigation = questionDiv.querySelector(".answer-navigation");
                 const answersContainer = questionDiv.querySelector(".answers");
 
-                let currentAnswerIndex = 0; // Track current answer index
-                let startX = 0; // Store starting X-coordinate for swipe
+                let currentAnswerIndex = 0;
+                let startX = 0;
 
                 data.forEach((answer, index) => {
-                    // Add navigation buttons
                     const button = document.createElement("button");
                     button.className = "answer-button";
                     button.innerText = index + 1;
-                    if (index === 0) button.classList.add("active"); // Highlight first button by default
+                    if (index === 0) button.classList.add("active");
                     button.addEventListener("click", () => {
-                        currentAnswerIndex = index; // Update current answer index
+                        currentAnswerIndex = index;
                         updateAnswerDisplay(index);
                     });
                     answerNavigation.appendChild(button);
 
                     const answerDiv = document.createElement("div");
                     answerDiv.className = "answer";
-                    answerDiv.style.display = index === 0 ? "block" : "none"; // Show first answer by default
+                    answerDiv.style.display = index === 0 ? "block" : "none";
                     answerDiv.innerHTML = `
                         <p>${answer.text}</p>
-                        ${
-                            answer.image
-                                ? `<img src="${answer.image}" alt="${question} Answer ${index + 1}">`
-                                : ""
-                        }
+                        ${answer.image ? `<img src="${answer.image}" alt="${question} Answer ${index + 1}">` : ""}
                     `;
                     answersContainer.appendChild(answerDiv);
                 });
 
-                // Swipe functionality
                 answersContainer.addEventListener("touchstart", (e) => {
-                    startX = e.touches[0].clientX; // Capture initial touch position
+                    startX = e.touches[0].clientX;
                 });
 
                 answersContainer.addEventListener("touchend", (e) => {
-                    const endX = e.changedTouches[0].clientX; // Capture final touch position
-                    const deltaX = endX - startX; // Calculate swipe distance
+                    const endX = e.changedTouches[0].clientX;
+                    const deltaX = endX - startX;
 
-                    if (Math.abs(deltaX) > 50) { // Minimum swipe distance threshold
+                    if (Math.abs(deltaX) > 50) {
                         if (deltaX < 0 && currentAnswerIndex < data.length - 1) {
-                            // Swipe left: Next answer
                             currentAnswerIndex++;
                         } else if (deltaX > 0 && currentAnswerIndex > 0) {
-                            // Swipe right: Previous answer
                             currentAnswerIndex--;
                         }
                         updateAnswerDisplay(currentAnswerIndex);
@@ -90,17 +80,12 @@ function loadQuestions(translations, language) {
                 });
 
                 const updateAnswerDisplay = (index) => {
-                    // Update answer display based on index
                     Array.from(answersContainer.children).forEach((child, i) => {
                         child.style.display = i === index ? "block" : "none";
                     });
 
                     Array.from(answerNavigation.children).forEach((btn, i) => {
-                        if (i === index) {
-                            btn.classList.add("active");
-                        } else {
-                            btn.classList.remove("active");
-                        }
+                        btn.classList.toggle("active", i === index);
                     });
                 };
 
@@ -110,22 +95,11 @@ function loadQuestions(translations, language) {
 
                     if (!isVisible) {
                         answerSection.style.display = "block";
-                        toggleIcon.innerHTML = "&#9660;"; // Down arrow (open state)
-
-                        // Ensure the first answer and button are active by default
-                        Array.from(answersContainer.children).forEach((child, i) => {
-                            child.style.display = i === 0 ? "block" : "none";
-                        });
-                        Array.from(answerNavigation.children).forEach((btn, i) => {
-                            if (i === 0) {
-                                btn.classList.add("active");
-                            } else {
-                                btn.classList.remove("active");
-                            }
-                        });
+                        toggleIcon.innerHTML = "&#9660;";
+                        updateAnswerDisplay(0);
                     } else {
                         answerSection.style.display = "none";
-                        toggleIcon.innerHTML = "&#9654;"; // Right arrow (closed state)
+                        toggleIcon.innerHTML = "&#9654;";
                     }
                 });
             } else {
@@ -135,11 +109,7 @@ function loadQuestions(translations, language) {
                     </div>
                     <div class="answer" style="display: none;">
                         <p>${data.text}</p>
-                        ${
-                            data.image
-                                ? `<img src="${data.image}" alt="${question}">`
-                                : ""
-                        }
+                        ${data.image ? `<img src="${data.image}" alt="${question}">` : ""}
                     </div>
                 `;
 
@@ -152,10 +122,10 @@ function loadQuestions(translations, language) {
                     closeAllAnswers();
                     if (!isVisible) {
                         answerDiv.style.display = "block";
-                        toggleIcon.innerHTML = "&#9660;"; // Down arrow (open state)
+                        toggleIcon.innerHTML = "&#9660;";
                     } else {
                         answerDiv.style.display = "none";
-                        toggleIcon.innerHTML = "&#9654;"; // Right arrow (closed state)
+                        toggleIcon.innerHTML = "&#9654;";
                     }
                 });
             }
@@ -163,9 +133,14 @@ function loadQuestions(translations, language) {
             container.appendChild(questionDiv);
         });
     });
+
+    // ✅ Show/hide Chinese-only brochure section
+    const brochureSection = document.getElementById("chinese-brochure");
+    if (brochureSection) {
+        brochureSection.style.display = (language === "zh") ? "block" : "none";
+    }
 }
 
-// Function to close all answers
 function closeAllAnswers() {
     document.querySelectorAll(".answer-section").forEach((section) => {
         section.style.display = "none";
@@ -174,7 +149,7 @@ function closeAllAnswers() {
         answer.style.display = "none";
     });
     document.querySelectorAll(".toggle-icon").forEach((icon) => {
-        icon.innerHTML = "&#9654;"; // Reset all icons to closed state
+        icon.innerHTML = "&#9654;";
     });
 }
 
@@ -219,20 +194,14 @@ document.addEventListener("DOMContentLoaded", async () => {
     loadQuestions(translations, currentLanguage);
 });
 
-const translations = {
-    en: {
-        welcomeTitle: "Welcome to STEMON's Q&A",
-        welcomeText: "Please select a language to explore frequently asked questions.",
-        welcomeAdditional: "Whether you're curious about our therapies, biotechnology, or general company information, we have answers in your preferred language."
-    },
-    zh: {
-        welcomeTitle: "欢迎来到 STEMON 的问答",
-        welcomeText: "请选择一种语言，以探索常见问题。",
-        welcomeAdditional: "无论您对我们的疗法、生物技术或一般公司信息感到好奇，我们都有您所需的答案。"
-    },
-    jp: {
-        welcomeTitle: "STEMON のQ&Aへようこそ",
-        welcomeText: "よくある質問を探すために言語を選択してください。",
-        welcomeAdditional: "当社の治療法やバイオテクノロジー、一般的な会社情報についての回答をご用意しています。"
-    }
-};
+// Brochure slide logic (if using buttons)
+// function showBrochureSlide(index) {
+//     const slides = document.querySelectorAll('.brochure-slide');
+//     const tabs = document.querySelectorAll('.brochure-tab');
+//     slides.forEach((slide, i) => {
+//         slide.style.display = i === index ? 'block' : 'none';
+//     });
+//     tabs.forEach((tab, i) => {
+//         tab.classList.toggle('active', i === index);
+//     });
+// }
