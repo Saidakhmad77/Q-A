@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>STEMON - Q&A</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Link to the PWA Manifest -->
+    
+    <!-- Use absolute paths to ensure they load correctly -->
+    <link rel="stylesheet" href="/style.css">
     <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#003366">
 </head>
 <body class="index-page">
     <header class="header">
-        <img src="images/logo-color.png" alt="STEMON Logo" class="logo">
+        <img src="/images/logo-color.png" alt="STEMON Logo" class="logo">
         <h1>Q&A</h1>
         <div class="language-selector">
             <label for="header-language">Language:</label>
@@ -22,6 +23,7 @@
             </select>
         </div>
     </header>
+
     <main class="main-language">
         <div class="welcome-message">
             <h2 id="welcome-title">Welcome to STEMON's Q&A</h2>
@@ -30,21 +32,23 @@
                 Whether you're curious about our therapies, biotechnology, or general company information, we have answers in your preferred language.
             </p>
         </div>
+
         <div class="language-options">
             <button class="language-button" onclick="navigateToQnA('jp')">
-                <img src="images/japan.jpg" alt="Japanese Flag">
+                <img src="/images/japan.jpg" alt="Japanese Flag">
                 <div class="text-overlay">日本語</div>
             </button>
             <button class="language-button" onclick="navigateToQnA('en')">
-                <img src="images/usa.jpg" alt="English Flag">
+                <img src="/images/usa.jpg" alt="English Flag">
                 <div class="text-overlay">English</div>
             </button>
             <button class="language-button" onclick="navigateToQnA('zh')">
-                <img src="images/china.jpg" alt="Chinese Flag">
+                <img src="/images/china.jpg" alt="Chinese Flag">
                 <div class="text-overlay">中文</div>
             </button>
         </div>
     </main>
+
     <!-- Register the Service Worker -->
     <script>
         if ('serviceWorker' in navigator) {
@@ -57,6 +61,7 @@
                 });
         }
     </script>
-    <script src="script.js"></script>
+
+    <script src="/script.js"></script>
 </body>
 </html>
