@@ -385,3 +385,10 @@ b {
 .brochure-contact strong {
   color: #003366;
 }
+
+.brochure-contact a {
+  text-decoration: none;
+}
+.brochure-contact a:hover {
+  text-decoration: underline;
+}
